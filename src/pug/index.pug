@@ -98,3 +98,10 @@ block content
           input(type='text', placeholder='Your E-mail*')
           textarea(placeholder='Message')
           input.btn.btn-sun(type='submit')
+
+  section.companys.container
+    .row
+      -for(var i = 0; i < 6; i++)
+        .col-xs-12.col-sm-2
+          a(href='#')
+            +img('compony.png')(class='responsive-image')

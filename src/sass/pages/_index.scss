@@ -329,3 +329,20 @@
     }
   }
 }
+
+.companys {
+  @include paddingBlock(130px, 130px, 35px, 15px);
+
+  img {
+    filter: grayscale(100%);
+    @include transition;
+
+    &:hover { filter: grayscale(0%); }
+
+    @include mobile {
+      @include max-size(70% null);
+      margin: 0 auto 20px;
+      filter: grayscale(0%);
+    }
+  }
+}
