@@ -1,3 +1,65 @@
 footer {
-	
+	@include paddingBlock;
+  background-color: $footer;
+
+  img {
+    margin-bottom: 25px;
+
+    @include tablet-land { @include max-size(90% null); }
+
+    @include desc { @include max-size(100% null); }
+  }
+
+  p {
+    @include font('lato', rem(16), normal, rem(20));
+    color: $lighten;
+
+    @include mobile { margin-bottom: 25px; }
+  }
+
+  h4 {
+    margin-bottom: 25px;
+    @include font('lato', rem(22), normal, rem(33));
+    color: $white;
+  }
+
+  ul {
+    @include mobile { margin-bottom: 25px; }
+
+    @include tablet { margin-bottom: 25px; }
+
+    @include tablet-land { margin-bottom: 0; }
+  }
+
+  li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    &:before {
+      content: "\f105";
+      @include font('FontAwesome', rem(16));
+      color: $lighten;
+      position: absolute;
+      @include vertical-center;
+      left: 0;
+    }
+
+    a {
+      @include font('lato', rem(16), normal, rem(20));
+      color: $sun;
+    }
+  }
+
+  .callnow, .address {
+    h4 { margin-bottom: 0; }
+  }
+
+  .callnow { margin-bottom: 25px; }
+
+  .email, .marker a {
+    font-family: 'lato';
+    color: $sun;
+
+    .fa { margin-right: 10px; }
+  }
 }

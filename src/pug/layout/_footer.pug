@@ -1,1 +1,40 @@
-footer
+include ../utils/_mixins
+
+footer.container-fluid
+    .container
+        .row
+            .col-xs-12.col-sm-6.col-md-3
+                a.logo(href='#')
+                    +img('footer-logo.jpg')
+                p.text-container
+                    | Our mission is to provide the best renovation service at an reasonable price without sacrificing quality. You will be satisfy with our work knowing we take the necessary steps.
+            .col-xs-12.col-sm-6.col-md-3
+                h4 Services
+                ul
+                    +list-link('#', 'Room Addition')(class='relative')
+                    +list-link('#', 'Bathroom')(class='relative')
+                    +list-link('#', 'Kitchen')(class='relative')
+                    +list-link('#', 'Plumbing Services')(class='relative')
+                    +list-link('#', 'Heating Repair')(class='relative')
+            .col-xs-12.col-sm-6.col-md-3
+                h4 Customer Care
+                ul
+                    +list-link('#', 'Room Addition')(class='relative')
+                    +list-link('#', 'Bathroom')(class='relative')
+                    +list-link('#', 'Kitchen')(class='relative')
+                    +list-link('#', 'Plumbing Services')(class='relative')
+                    +list-link('#', 'Heating Repair')(class='relative')
+            .col-xs-12.col-sm-6.col-md-3
+                .callnow
+                    h4 Call Now For Services!
+                    h4.phone 444-333-2211
+                    .email
+                        i.fa.fa-envelope
+                        | Email us
+                .address
+                    h4 123, New Lenox
+                    h4 Chicago, IL 60606
+                    .marker
+                        a(href='#')
+                            i.fa.fa-map-marker
+                            | Get location
