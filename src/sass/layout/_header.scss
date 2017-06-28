@@ -3,6 +3,17 @@ header {
     top: 25px;
     bottom: 25px;
   }
+  position: fixed;
+  left: 0;
+  right: 0;
+  @include transition;
+
+  &.fixed {
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
+  }
 
   .row { align-items: stretch; }
 
