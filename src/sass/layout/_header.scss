@@ -49,6 +49,7 @@ header {
       a {
         padding-bottom: 5px;
         @include font;
+        color: $darken;
         border-bottom: 3px solid $sun;
         @include transition;
 
