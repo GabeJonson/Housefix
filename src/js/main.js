@@ -6,6 +6,7 @@ var HouseFix = (function() {
   return{
     init: function() {
       this.sandwitch();
+      this.scroll();
     },
 
     sandwitch: function() {

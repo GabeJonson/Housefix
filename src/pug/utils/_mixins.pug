@@ -11,3 +11,10 @@ mixin list-link(href, text, linkClass)
 			a(href=href, class=linkClass)= text
 		else 
 			a(href=href)= text
+
+mixin features(text, desc)
+	.features-container.row.col-xs-12.col-sm-4
+		+figure(`features-${i}.jpg`)(class='col-xs-2')
+		.text.col-xs-10
+			h3.h3= text
+			p.small-text= desc

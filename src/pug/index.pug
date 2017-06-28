@@ -12,3 +12,10 @@ block content
         p.small-text Service Center is ready to help with all your
         p.small-text appliance repair and service needs.
         a.btn.btn-sun.text-center(href='#') Order Diagnostics
+
+  section.features.container
+    h2.h2.col-xs-12 Our Features
+    p.small-text.col-xs-12 From a complete turn-key job to a full project development. Leave the issues to the professionals.
+    .row.between-sm
+      -for(var i = 1; i <= 3; i++)
+        +features('Professional HandyMan', 'From exhaust fan assessment to reviewing attic space and cleaning refrigerator coils to give you a safe life.')

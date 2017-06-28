@@ -45,3 +45,13 @@ figure { margin: 0; }
     wrap: wrap;
   }
 }
+
+p.small-text {
+  @include font('RobotoSlab', rem(20), normal, rem(30));
+  color: $lighten;
+
+  @include mobile {
+    font-size: rem(16);
+  }
+
+}
