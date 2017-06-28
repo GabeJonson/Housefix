@@ -18,3 +18,8 @@ mixin features(text, desc)
 		.text.col-xs-10
 			h3.h3= text
 			p.small-text= desc
+
+mixin counter(number, text)
+	.col-xs-12.col-sm-3
+		p.number.relative= number
+		p.text= text

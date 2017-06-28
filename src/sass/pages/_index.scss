@@ -1,17 +1,10 @@
 .big-box {
   margin-top: 80px;
-  padding: {
-    top: 260px;
-    bottom: 260px;
-  }
+  @include paddingBlock(260px, 260px, 20px, 20px);
   @include parallax;
 
   @include mobile {
     margin-top: 0;
-    padding: {
-      top: 20px;
-      bottom: 20px;
-    }
     background: {
       position: left bottom;
       attachment: local;
@@ -44,17 +37,7 @@
 }
 
 .features {
-  padding: {
-    top: 130px;
-    bottom: 130px;
-  }
-
-  @include mobile {
-    padding: {
-      top: 35px;
-      bottom: 35px;
-    }
-  }
+  @include paddingBlock;
 
   .small-text { margin-bottom: 55px; }
 
@@ -82,18 +65,8 @@
 }
 
 .professional {
-  padding: {
-    top: 130px;
-    bottom: 130px;
-  }
+  @include paddingBlock;
   @include parallax;
-
-  @include mobile {
-    padding: {
-      top: 35px;
-      bottom: 35px;
-    }
-  }
 
   .heading-text:nth-last-of-type(1) { margin-bottom: 17px; }
 
@@ -116,6 +89,33 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+}
+
+.counter {
+  @include paddingBlock;
+
+  p {
+    &.number {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      @include font('lato', rem(40), normal, rem(52));
+
+      &:after {
+        content: '';
+        @include size(20% 2px);
+        background-color: $sun;
+        position: absolute;
+        bottom: 0;
+        @include horizontal-center;
+      }
+    }
+
+    &.text {
+      @include font('lato', rem(20), normal, rem(22));
+
+      @include mobile { margin-bottom: 35px; }
     }
   }
 }

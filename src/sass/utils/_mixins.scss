@@ -78,15 +78,42 @@
   line-height: $line;
 }
 
-@mixin transition($time: 0.3s, $timing: ease, $items: all) {
+@mixin transition(
+  $time: 0.3s,
+  $timing: ease,
+  $items: all
+) {
   transition: $items $time $timing;
 }
 
-@mixin parallax($size: cover, $positoin: 50% 0, $attachment: fixed) {
+@mixin parallax(
+  $size: cover,
+  $positoin: 50% 0,
+  $attachment: fixed
+) {
   background: {
     size: $size;
     position: $positoin;
     attachment: $attachment;
     repeat: no-repeat;
+  }
+}
+
+@mixin paddingBlock(
+  $top: 130px,
+  $bottom: 130px,
+  $mobileTop: 35px,
+  $mobileBottom: 35px
+) {
+  padding: {
+    top: $top;
+    bottom: $bottom;
+  }
+
+  @include mobile {
+    padding: {
+      top: $mobileTop;
+      bottom: $mobileBottom;
+    }
   }
 }
