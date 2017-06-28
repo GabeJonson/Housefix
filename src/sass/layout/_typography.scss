@@ -32,3 +32,13 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'RobotoSlab';
+	src: url('#{$font-path}RobotoSlab-Regular.eot');
+	src: url('#{$font-path}RobotoSlab-Regular.woff2') format('woff2'),
+	url('#{$font-path}RobotoSlab-Regular.woff') format('woff'),
+	url('#{$font-path}RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

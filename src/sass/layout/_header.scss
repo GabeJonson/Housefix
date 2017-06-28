@@ -3,9 +3,12 @@ header {
     top: 25px;
     bottom: 25px;
   }
+  background-color: $white;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 3;
   @include transition;
 
   &.fixed {
@@ -14,6 +17,8 @@ header {
       bottom: 10px;
     }
   }
+
+  @include mobile { position: static; }
 
   .row { align-items: stretch; }
 

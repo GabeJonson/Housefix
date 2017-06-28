@@ -1,0 +1,19 @@
+.btn {
+  @include size(100% auto);
+  @include max-size(180px null);
+  padding: 20px;
+  @include font('RobotoSlab', rem(16), normal);
+  @include transition;
+
+  &-sun {
+    color: $dark;
+    background-color: $sun;
+    box-shadow: inset 0px -2px 3px 0px fade-out($sun, 0.2);
+
+    &:hover {
+      color: $white;
+      background-color: $darken;
+      box-shadow: none;
+    }
+  }
+}
