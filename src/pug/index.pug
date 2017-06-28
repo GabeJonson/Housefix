@@ -14,19 +14,26 @@ block content
         a.btn.btn-sun.text-center(href='#') Order Diagnostics
 
   section.features.container
-    h2.h2.heading-text.col-xs-12 Our Features
-    p.small-text.col-xs-12 From a complete turn-key job to a full project development. Leave the issues to the professionals.
+    +heading(
+    'Our Features',
+    'From a complete turn-key job to a full project development. Leave the issues to the professionals.'
+    )
     .row.between-sm
       -for(var i = 1; i <= 3; i++)
-        +features('Professional HandyMan', 'From exhaust fan assessment to reviewing attic space and cleaning refrigerator coils to give you a safe life.')
+        +features(
+        'Professional HandyMan',
+        'From exhaust fan assessment to reviewing attic space and cleaning refrigerator coils to give you a safe life.'
+        )
 
   section.professional.container-fluid(style=`background-image: url(${imgPath}professional-bg.jpg)`)
     .container
-        h2.h2.heading-text.col-xs-12 We Are Professional & Thoughful HandyMen
-        p.small-text.col-xs-12.col-sm-6 Our handymen team was established in response to the growing need for high-quality housing and commercial space in the city. Since then, we are one of the leading real estate developers who serve the needs of a discerning clientele.
+      +heading(
+      'We Are Professional & Thoughful HandyMen',
+      'Our handymen team was established in response to the growing need for high-quality housing and commercial space in the city. Since then, we are one of the leading real estate developers who serve the needs of a discerning clientele.'
+      )(class='col-sm-6')
         .description-container.row.col-xs-12.col-sm-7
           -for(var i = 0; i < 4; i++)
-            p.description-text.relative.col-xs-12.col-sm-6 Our staff is experts who upgrades their skills from year to year.
+            p.description-text.relative.col-xs-12.col-md-6 Our staff is experts who upgrades their skills from year to year.
 
   section.counter.container
     .row.between-sm.text-center
@@ -34,3 +41,49 @@ block content
       +counter('10', 'Years on Market')
       +counter('2 954', 'Happy Customers')
       +counter('3 597', 'Items of Equipment Repaired')
+
+  section.services.container-fluid
+    .container
+      +heading(
+      'Our Services',
+      'Take a rest, while our professional team will do all job for you.'
+      )
+      .row
+        -for(var i = 1; i <= 4; i++)
+          .services-box-container.col-xs-12.col-sm-6.col-md-3
+            a(href='#').top-box.relative
+              +figure(`services.jpg`)
+              .text-container.text-center
+                p Electrician
+                  span Services
+            .description-container.text-center
+              p.description Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        a.btn.btn-scelet.text-center(href='#') See all services
+
+  section.works.container-fluid
+    .container
+      +heading(
+      'Our Works',
+      'We let our quality work and commitment to customer satisfaction be our slogan.'
+      )
+    .row
+      -for(var i = 1; i <= 4; i++)
+        a.col-xs-12.col-sm-6.col-md-3.relative(data-fancybox='gallery', href=`${imgPath}works-${i}.jpg`)
+          +img(`works-${i}.jpg`)(class='responsive-image')
+      a.col-xs-12.relative(data-fancybox='gallery', href=`${imgPath}works-5.jpg`)
+        +img('works-5.jpg')(class='responsive-image')
+
+  section.customer.container
+    +heading(
+    'Happy Customer Testimonials',
+    'Creating a sustainable future through building preservation, green architecture, and smart design.'
+    )
+    .row
+      -for(var i = 0; i < 3; i++)
+        .customer-container.col-xs-12.col-md-4
+          p.description.relative I highly recommend this company. I had a washer break down and they had it back up and running within 30 minutes of service call. The service men were very professional and prompt. If you have appliance damages, give them a call, they will surely repair.
+          .name-container.row
+            +figure('sandra.jpg')(class='col-xs-3')
+            .text-container
+              p.name Sandra Mitchell
+              span Housewife

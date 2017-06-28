@@ -12,8 +12,14 @@ mixin list-link(href, text, linkClass)
 		else 
 			a(href=href)= text
 
+mixin heading(headingText, smallText)
+	h2.h2.heading-text.col-xs-12&attributes(attributes)= headingText
+	p.small-text.col-xs-12&attributes(attributes)= smallText
+	if block
+		block
+
 mixin features(text, desc)
-	.features-container.row.col-xs-12.col-sm-4
+	.features-container.row.col-xs-12.col-md-4
 		+figure(`features-${i}.jpg`)(class='col-xs-2')
 		.text.col-xs-10
 			h3.h3= text
