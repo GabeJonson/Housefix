@@ -87,3 +87,14 @@ block content
             .text-container
               p.name Sandra Mitchell
               span Housewife
+
+  section.send-form.container-fluid(style=`background-image: url(${imgPath}form-bg.jpg)`)
+    .container
+      .row.end-sm
+        form.col-xs-12.col-sm-6
+          h3.text-center Get A Quick Quote
+          p.text-center Send us an email by entering your details and any comments you may have in the form.
+          input(type='text', placeholder='Your Name')
+          input(type='text', placeholder='Your E-mail*')
+          textarea(placeholder='Message')
+          input.btn.btn-sun(type='submit')

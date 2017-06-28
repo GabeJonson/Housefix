@@ -285,3 +285,47 @@
     }
   }
 }
+
+.send-form {
+  @include paddingBlock;
+  @include parallax;
+
+  form {
+    padding: 100px 55px;
+    background-color: $white;
+
+    @include mobile {
+      padding: 50px 15px;
+    }
+
+    h3 {
+      @include font('lato', rem(30), normal, rem(45));
+      color: $form;
+
+      @include mobile { font-size: rem(20); }
+    }
+
+    p {
+      margin-bottom: 25px;
+      @include font('lato', rem(16), normal, rem(22));
+      color: $lighten;
+
+      @include mobile { font-size: rem(14); }
+    }
+
+    input, textarea {
+      @include size(100% null);
+      margin-bottom: 4px;
+      padding: 15px 20px;
+      font-family: 'lato';
+      border: 1px solid $form-border;
+    }
+
+    textarea { @include size(null 100px); }
+
+    [type='submit'] {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
