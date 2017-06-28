@@ -18,12 +18,20 @@ var HouseFix = (function() {
     },
 
     scroll: function() {
+      var self = this;
+
       $(window).on('scroll', function() {
         var sTop = $(this).scrollTop();
 
         if(sTop > 10) $('header').addClass('fixed');
         else $('header').removeClass('fixed');
-      })
+
+        self.parallax(sTop);
+      });
+    },
+
+    parallax: function(number) {
+      $('.parallax').css('background-position', '50%' + number / 40 + 'px');
     }
   }
 })();
