@@ -63,3 +63,21 @@
     clear: both;
   }
 }
+
+@mixin font(
+  $family: 'lato',
+  $size: rem(16),
+  $weight: normal,
+  $line: rem(16)
+) {
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $line;
+}
+
+@mixin transition($time: 0.3s, $timing: ease, $items: all) {
+  transition: $items $time $timing;
+}

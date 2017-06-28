@@ -1,1 +1,17 @@
-header
+include ../utils/_mixins
+include ../utils/_varibles
+
+header.container-fluid
+    .container
+        .row
+            .logo.col-xs-12.col-sm-3
+                a(href='#')
+                    +img('logo.jpg')(class='responsive-image')
+            include ./_sandwitch
+            ul.nav.col-xs-12.col-sm-7.flex.around-sm.center-xs.row
+                each item in menu
+                    +list-link('#', item)
+            .phone-container.col-xs-12.col-sm-2.flex.middle-sm
+                i.fa.fa-phone
+                span.phone 1-775-97-377
+

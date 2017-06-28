@@ -37,3 +37,11 @@ figure { margin: 0; }
     display: none;
   }
 }
+
+.flex {
+  display: flex;
+  flex: {
+    direction: row;
+    wrap: wrap;
+  }
+}
