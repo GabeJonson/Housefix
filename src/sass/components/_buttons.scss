@@ -3,6 +3,7 @@
   @include max-size(180px null);
   padding: 20px;
   @include font('RobotoSlab', rem(16), normal);
+  border-radius: 5px;
   @include transition;
 
   &-sun {

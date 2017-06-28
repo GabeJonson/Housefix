@@ -14,8 +14,16 @@ block content
         a.btn.btn-sun.text-center(href='#') Order Diagnostics
 
   section.features.container
-    h2.h2.col-xs-12 Our Features
+    h2.h2.heading-text.col-xs-12 Our Features
     p.small-text.col-xs-12 From a complete turn-key job to a full project development. Leave the issues to the professionals.
     .row.between-sm
       -for(var i = 1; i <= 3; i++)
         +features('Professional HandyMan', 'From exhaust fan assessment to reviewing attic space and cleaning refrigerator coils to give you a safe life.')
+
+  section.professional.container-fluid(style=`background-image: url(${imgPath}professional-bg.jpg)`)
+    .container
+        h2.h2.heading-text.col-xs-12 We Are Professional & Thoughful HandyMen
+        p.small-text.col-xs-12.col-sm-6 Our handymen team was established in response to the growing need for high-quality housing and commercial space in the city. Since then, we are one of the leading real estate developers who serve the needs of a discerning clientele.
+        .description-container.row.col-xs-12.col-sm-7
+          -for(var i = 0; i < 4; i++)
+            p.description-text.relative.col-xs-12.col-sm-6 Our staff is experts who upgrades their skills from year to year.
