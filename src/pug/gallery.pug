@@ -1,0 +1,17 @@
+extends layout/_main
+
+block title
+    | Gallery
+
+block content
+    section.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
+        .container
+            .row
+                p.big-text Building Your Quality
+                p.big-text of Comfortable Life
+
+    section.gallery.works.container
+        .row
+            -for(var i = 1; i <= 20; i++)
+                a.col-xs-12.col-sm-6.col-md-4.relative(data-fancybox='gallery', href=`${imgPath}services.jpg`)
+                    +img(`services.jpg`)(class='responsive-image')

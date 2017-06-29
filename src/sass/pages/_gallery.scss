@@ -1,0 +1,16 @@
+.gallery {
+  padding-bottom: 130px;
+
+  @include mobile { padding-bottom: 35px; }
+
+  a {
+    margin: 20px 0;
+
+    &:before {
+      @include size(90% null);
+      left: 20px;
+    }
+
+    img { padding: 0 20px; }
+  }
+}
