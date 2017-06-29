@@ -1,0 +1,39 @@
+.team {
+  @include paddingBlock;
+
+  h2 {
+    @include font('lato', rem(40), normal, rem(52));
+
+    &:nth-last-of-type(1) { margin-bottom: 25px; }
+
+    @include mobile {
+      font-size: rem(30);
+      line-height: rem(30);
+    }
+  }
+
+  p {
+    @include font('lato', rem(16), normal, rem(22));
+
+    &:nth-last-of-type(1) { margin-bottom: 55px; }
+  }
+
+  .man-container {
+    margin-bottom: 55px;
+
+    figure { margin-bottom: 25px; }
+
+    .name { @include font('lato', rem(24), normal, rem(33)); }
+
+    .position {
+      margin-bottom: 25px;
+      @include font('lato', rem(14), normal, rem(23));
+      color: $half-darken;
+    }
+
+    .description {
+      @include font('lato', rem(16), normal, rem(22));
+      color: $half-darken;
+    }
+  }
+}
