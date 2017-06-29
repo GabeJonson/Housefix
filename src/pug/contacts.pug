@@ -1,0 +1,45 @@
+extends layout/_main
+
+block title
+    | House fix
+
+block content
+    section.single.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
+        .container
+            .row
+                p.big-text.col-xs-12 Contact
+                p.big-text.col-xs-12 Information
+
+    section.contact.container
+        .row
+            .col-xs-12.col-sm-4.text-center
+                .marker
+                    i.fa.fa-map-marker
+                    .line
+                    .type Location:
+                    p.small-text 176 W street name,
+                    p.small-text New York, NY 10014
+            .col-xs-12.col-sm-4.text-center
+                .mail
+                    i.fa.fa-envelope-open-o
+                    .line
+                    .type Email:
+                    p.small-text info@yoursite.com
+                    p.small-text www.yoursite.com
+            .col-xs-12.col-sm-4.text-center
+                .phone
+                    i.fa.fa-mobile
+                    .line
+                    .type Location:
+                    p.small-text +1(800)123-4567
+                    p.small-text +1(800)123-4567
+    section#map
+
+    section.form
+        form.col-xs-12.col-sm-3
+            h3.text-center Get A Quick Quote
+            p.text-center Send us an email by entering your details and any comments you may have in the form.
+            input(type='text', placeholder='Your Name')
+            input(type='text', placeholder='Your E-mail*')
+            textarea(placeholder='Message')
+            input.btn.btn-sun.text-uppercase(type='submit', value='send')

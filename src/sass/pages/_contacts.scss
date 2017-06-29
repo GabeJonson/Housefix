@@ -1,0 +1,34 @@
+.contact {
+  @include paddingBlock;
+
+  .fa {
+    font-size: 80px;
+    color: $dark;
+  }
+
+  .line {
+    @include size(20% 2px);
+    margin: 25px auto;
+    background-color: $sun;
+  }
+
+  .type {
+    margin-bottom: 17px;
+    @include font('lato', rem(22), normal, rem(17));
+  }
+
+  p {
+    @include font('lato', rem(16), normal, rem(22));
+    color: $half-darken;
+  }
+
+  [class^='col-'] { margin-bottom: 25px; }
+}
+
+.form {
+  [class^='col'] { @include mobile { margin: 0 auto; } }
+}
+
+#map {
+  @include size(100% 530px);
+}

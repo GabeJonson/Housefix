@@ -71,7 +71,11 @@ header {
           border-bottom: 3px solid transparent;
         }
 
-        &.active { border-bottom: 3px solid transparent; }
+        &.active {
+          border-bottom: 3px solid transparent;
+
+          @include mobile { border-bottom: 3px solid $sun; }
+        }
       }
     }
   }

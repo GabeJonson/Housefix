@@ -1,6 +1,8 @@
 .blog {
   margin-top: 100px;
 
+  @include mobile { margin-top: 0; }
+
   h3 {
     padding: {
       top: 25px;
@@ -21,7 +23,11 @@
     figure {
       margin-bottom: 25px;
 
-      img { @include size(null 400px); }
+      img {
+        @include size(null 400px);
+
+        @include mobile { @include  size(null auto); }
+      }
     }
 
     p, .description {
