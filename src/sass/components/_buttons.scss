@@ -3,6 +3,7 @@
   @include max-size(180px null);
   padding: 20px;
   @include font('RobotoSlab', rem(16), normal);
+  color: $darken;
   border: 1px solid transparent;
   border-radius: 5px;
   @include transition;

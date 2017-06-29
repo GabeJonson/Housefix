@@ -1,0 +1,7 @@
+.services-page {
+  @include paddingBlock(90px, 90px, 35px, 35px);
+  p {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+}

@@ -16,6 +16,13 @@ header {
       top: 10px;
       bottom: 10px;
     }
+
+    @include mobile {
+      padding: {
+        top: 25px;
+        bottom: 25px;
+      }
+    }
   }
 
   @include mobile { position: static; }
@@ -63,6 +70,8 @@ header {
         &:hover {
           border-bottom: 3px solid transparent;
         }
+
+        &.active { border-bottom: 3px solid transparent; }
       }
     }
   }

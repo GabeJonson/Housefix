@@ -50,7 +50,7 @@ block content
       )
       .row
         -for(var i = 1; i <= 4; i++)
-          .services-box-container.col-xs-12.col-sm-6.col-md-3
+          .services-box-container.col-xs-12.col-sm-6.col-md-4
             a(href='#').top-box.relative
               +figure(`services.jpg`)
               .text-container.text-center
@@ -58,7 +58,8 @@ block content
                   span Services
             .description-container.text-center
               p.description Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-        a.btn.btn-scelet.text-center(href='#') See all services
+        .col-xs-12.text-center
+          a.btn.btn-scelet.text-center(href='#') See all services
 
   section.works.container-fluid
     .container
@@ -97,7 +98,7 @@ block content
           input(type='text', placeholder='Your Name')
           input(type='text', placeholder='Your E-mail*')
           textarea(placeholder='Message')
-          input.btn.btn-sun(type='submit')
+          input.btn.btn-sun.text-uppercase(type='submit', value='send')
 
   section.companys.container
     .row

@@ -84,7 +84,8 @@ gulp.task('pug', function() {
                 cssPath:      '../css/',
                 jsPath:       '../js/',
                 imgPath:      '../img/',
-                cssName:      'main'
+                cssName:      'main',
+                devLinks:     '/html'
             }
         }))
         .pipe(gulp.dest(path.src.pugDest))
@@ -98,7 +99,8 @@ gulp.task('pug:build', function() {
                 cssPath:      'css/',
                 jsPath:       'js/',
                 imgPath:      'img/',
-                cssName:      'main'
+                cssName:      'main',
+                devLinks:     '/build'
             }
         }))
         .pipe(gulp.dest(path.src.pugDest))
