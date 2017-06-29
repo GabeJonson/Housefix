@@ -1,0 +1,32 @@
+extends layout/_main
+
+block title
+    | House fix
+
+block content
+    section.single.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
+        .container
+            .row
+                p.big-text.col-xs-12 One of the posts
+
+    section.blog.single.container
+        .row
+            .content.col-xs-12.col-md-8.col-lg-9
+                .news-container
+                    h3 The most common mistakes when managing personal finances
+                    .date
+                        i.fa.fa-calendar
+                        | 13.04.2017
+                    +figure('works-2.jpg')
+                    p The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.
+                    +figure('works-2.jpg')
+                    p The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.
+                    p The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.
+                    p The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.
+
+            aside.col-md-4.col-lg-3.hidden-xs
+                h3 Recent Posts
+                -for(var i = 0; i < 4; i++)
+                    a(href=`${devLinks}/single.html`)
+                        +img('works-2.jpg')(class='responsive-image')
+                        h4 The most common mistakes when managing personal finances

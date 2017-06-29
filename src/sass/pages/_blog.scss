@@ -24,7 +24,7 @@
       img { @include size(null 400px); }
     }
 
-    .description {
+    p, .description {
       margin-bottom: 50px;
       @include font('lato', rem(16), normal, rem(22));
       color: $lighten;
@@ -52,6 +52,16 @@
     a {
       @include size(100% null);
       display: block;
+    }
+  }
+
+  &.single {
+    .news-container {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+
+      p { margin-bottom: 25px; }
     }
   }
 }
