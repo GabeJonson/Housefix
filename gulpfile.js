@@ -100,7 +100,7 @@ gulp.task('pug:build', function() {
                 jsPath:       'js/',
                 imgPath:      'img/',
                 cssName:      'main',
-                devLinks:     '/build'
+                devLinks:     '/Housefix/build'
             }
         }))
         .pipe(gulp.dest(path.src.pugDest))
