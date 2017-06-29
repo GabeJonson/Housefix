@@ -32,13 +32,29 @@ figure { margin: 0; }
   &uppercase { text-transform: uppercase; }
 }
 
-.hidden-sm {
-  @include mobile {
-    display: block;
+.hidden {
+  &-sm {
+    @include mobile {
+      display: block;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 
-  @include tablet {
-    display: none;
+  &-xs {
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include tablet-land {
+      display: block;
+    }
   }
 }
 

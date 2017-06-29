@@ -1,0 +1,57 @@
+.blog {
+  margin-top: 100px;
+
+  h3 {
+    padding: {
+      top: 25px;
+      bottom: 25px;
+    }
+    @include font('lato', rem(30), 400, rem(40));
+  }
+
+  .content {
+    margin-bottom: 25px;
+
+    .news-container {
+      margin-bottom: 25px;
+      padding-bottom: 50px;
+      border-bottom: 3px solid $sun;
+    }
+
+    figure {
+      margin-bottom: 25px;
+
+      img { @include size(null 400px); }
+    }
+
+    .description {
+      margin-bottom: 50px;
+      @include font('lato', rem(16), normal, rem(22));
+      color: $lighten;
+    }
+
+    .btn { padding: 12px; }
+  }
+
+  .date {
+    margin-bottom: 25px;
+    @include font('Helvetiva', rem(14), normal, rem(20));
+    color: $lighten;
+
+    .fa { margin-right: 10px; }
+  }
+
+  aside {
+    h4 {
+      @include size(100% null);
+      padding: 25px 0;
+      @include font('lato', rem(24), normal, rem(33));
+      color: $dark;
+    }
+
+    a {
+      @include size(100% null);
+      display: block;
+    }
+  }
+}
