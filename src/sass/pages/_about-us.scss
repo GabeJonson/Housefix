@@ -1,0 +1,70 @@
+.about {
+  @include paddingBlock;
+  color: $about-color;
+
+  h2 {
+    margin-bottom: 20px;
+    @include font('lato', rem(40), normal, rem(52));
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    @include font('lato', rem(24), normal, rem(33));
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: rem(16);
+  }
+
+  .video {
+    a {
+      display: block;
+
+      &:before {
+        content: '';
+        background-color: fade-out($black, 0.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @include transition;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &:after {
+        content: '\f04b';
+        @include font('FontAwesome', rem(30));
+        color: $white;
+        @include absolute-center;
+      }
+
+      &:hover {
+        &:before {
+          top: 30px;
+          right: 30px;
+          bottom: 30px;
+          left: 30px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.counter.about { background: $about-counter; }
+
+.about-text-container {
+  @include paddingBlock;
+
+  h3 {
+    margin-bottom: 25px;
+    @include font('lato', rem(30), normal, rem(45));
+  }
+
+  [class^='col-'] { margin: 0 auto; }
+
+  p { font-size: rem(16); }
+}

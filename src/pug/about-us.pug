@@ -1,0 +1,75 @@
+extends layout/_main
+
+block title
+    | House fix
+
+block content
+    section.single.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
+        .container
+            .row
+                p.big-text.col-xs-12 We Provide
+                p.big-text.col-xs-12 Professional Services
+
+    section.about.container
+        .row
+            .col-xs-12.col-md-6
+                h2 Home Maintenance Business
+                h3 One call does it all. Our residential renovation services company can help save your time starting with the first phone call through your project completion.
+                p.small-text We help our clients with prioritizing major and minor home repair goals to complete the project faster and better than ever.
+                p.small-text Our handyman team is equipped with everything they need: professional tools, recognized uniform, loaded vans etc. You don’t have to interrupt your day, wasting your time on organization issues.
+            .video.col-xs-12.col-md-6
+                a.relative(href='#')
+                    +img('works-2.jpg')(class='responsive-image')
+
+    section.professional.container-fluid.parallax(style=`background-image: url(${imgPath}professional-bg.jpg)`)
+        .container
+            +heading(
+            'We Are Professional & Thoughful HandyMen',
+            'Our handymen team was established in response to the growing need for high-quality housing and commercial space in the city. Since then, we are one of the leading real estate developers who serve the needs of a discerning clientele.'
+            )(class='col-sm-6')
+                .description-container.row.col-xs-12.col-sm-7
+                    -for(var i = 0; i < 4; i++)
+                        p.description-text.relative.col-xs-12.col-md-6 Our staff is experts who upgrades their skills from year to year.
+
+    section.about-text-container.container.text-center
+        .col-xs-12.col-sm-6
+            h3 “Getting the job done wherever, however,  no matter how big or small“
+            p.small-text We set new standards of ethics and excellence in delivering the superior quality services to our customers by employing the team of highly motivated and focused professionals.
+
+    section.counter.about.container-fluid
+        .container
+            .row.between-sm.text-center
+                +counter('100%', 'Satisfaction Guaranteed')
+                +counter('10', 'Years on Market')
+                +counter('2 954', 'Happy Customers')
+                +counter('3 597', 'Items of Equipment Repaired')
+
+    section.features.container
+        +heading(
+        'Our Features',
+        'From a complete turn-key job to a full project development. Leave the issues to the professionals.'
+        )
+        .row.between-sm
+            -for(var i = 1; i <= 3; i++)
+                +features(
+                'Professional HandyMan',
+                'From exhaust fan assessment to reviewing attic space and cleaning refrigerator coils to give you a safe life.'
+                )
+
+    section.send-form.container-fluid(style=`background-image: url(${imgPath}form-bg.jpg)`)
+        .container
+            .row.end-sm
+                form.col-xs-12.col-sm-6
+                    h3.text-center Get A Quick Quote
+                    p.text-center Send us an email by entering your details and any comments you may have in the form.
+                    input(type='text', placeholder='Your Name')
+                    input(type='text', placeholder='Your E-mail*')
+                    textarea(placeholder='Message')
+                    input.btn.btn-sun.text-uppercase(type='submit', value='send')
+
+    section.companys.container
+        .row
+            -for(var i = 0; i < 6; i++)
+                .col-xs-12.col-sm-2
+                    a(href='#')
+                        +img('compony.png')(class='responsive-image')
