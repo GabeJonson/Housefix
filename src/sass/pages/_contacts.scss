@@ -26,7 +26,7 @@
 }
 
 .form {
-  [class^='col'] { @include mobile { margin: 0 auto; } }
+  [class^='col-'] { @include mobile { margin: 0 auto; } }
 }
 
 #map {
