@@ -25,10 +25,6 @@
   [class^='col-'] { margin-bottom: 25px; }
 }
 
-.form {
-  [class^='col-'] { @include mobile { margin: 0 auto; } }
-}
+.form { form { margin: 0 auto; } }
 
-#map {
-  @include size(100% 530px);
-}
+#map { @include size(100% 530px); }
