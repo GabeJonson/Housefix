@@ -7,33 +7,33 @@ block content
   section.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
     .container
       .row
-        p.big-text Building Your Quality
-        p.big-text of Comfortable Life
-        p.small-text Service Center is ready to help with all your
-        p.small-text appliance repair and service needs.
-        a.btn.btn-sun.text-center(href='#') Order Diagnostics
+        p.big-text Строительная компания
+        p.big-text Мы реализуем Ваши мечты
+        p.small-text Сервисный центр готов помочь всем вашим
+        p.small-text Ремонт и обслуживание оборудования.
+        a.btn.btn-sun.text-center(href='#') Заказать!
 
   section.features.container
     +heading(
-    'Our Features',
-    'From a complete turn-key job to a full project development. Leave the issues to the professionals.'
+    'Что мы делаем',
+    'От полной работы «под ключ» до полной разработки проекта. Оставьте проблемы профессионалам.'
     )
     .row.between-sm
       -for(var i = 1; i <= 3; i++)
         +features(
-        'Professional HandyMan',
-        'From exhaust fan assessment to reviewing attic space and cleaning refrigerator coils to give you a safe life.'
+        'Профессиональные строители',
+        'От оценки вытяжного вентилятора до обзора чердачного пространства и очистки холодильных катушек, чтобы обеспечить вам безопасную жизнь.'
         )
 
   section.professional.container-fluid.parallax(style=`background-image: url(${imgPath}professional-bg.jpg)`)
     .container
       +heading(
-      'We Are Professional & Thoughful HandyMen',
-      'Our handymen team was established in response to the growing need for high-quality housing and commercial space in the city. Since then, we are one of the leading real estate developers who serve the needs of a discerning clientele.'
+      'Мы профессионалы',
+      'Наша команда мастеров была создана в ответ на растущую потребность в высококачественном жилом и коммерческом пространстве в городе. С тех пор мы являемся одним из ведущих застройщиков, которые обслуживают потребности взыскательных клиентов.'
       )(class='col-sm-6')
         .description-container.row.col-xs-12.col-sm-7
           -for(var i = 0; i < 4; i++)
-            p.description-text.relative.col-xs-12.col-md-6 Our staff is experts who upgrades their skills from year to year.
+            p.description-text.relative.col-xs-12.col-md-6 Наш персонал - это специалисты, которые из года в год повышают свои навыки.
 
   section.counter.container
     .row.between-sm.text-center

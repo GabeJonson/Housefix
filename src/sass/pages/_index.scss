@@ -63,8 +63,6 @@
       @include mobile { line-height: rem(25); }
 
       @include tablet-land { line-height: rem(30); }
-
-      @include desc { line-height: rem(16); }
     }
 
     .small-text {
