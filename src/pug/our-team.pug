@@ -7,18 +7,18 @@ block content
     section.single.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
         .container
             .row
-                p.big-text.col-xs-12 Introducing
-                p.big-text.col-xs-12 Our Team!
+                p.big-text.col-xs-12(contenteditable='true') Introducing
+                p.big-text.col-xs-12(contenteditable='true') Our Team!
 
     section.team.container
-        h2.text-center We’ve got 25 Years of Experience in Home
-        h2.text-center Maintenance Business
-        p.small-text.text-center We are always proud to be the first choice of people who need home repairs, remodeling and maintenance.
-        p.small-text.text-center We are glad to service over 70,000 customer since 2000.
+        h2.text-center(contenteditable='true') We’ve got 25 Years of Experience in Home
+        h2.text-center(contenteditable='true') Maintenance Business
+        p.small-text.text-center(contenteditable='true') We are always proud to be the first choice of people who need home repairs, remodeling and maintenance.
+        p.small-text.text-center(contenteditable='true') We are glad to service over 70,000 customer since 2000.
         .row
             -for(var i = 0; i < 5; i++)
                 .man-container.text-center.col-xs-12.col-sm-4
                     +figure('team.jpg')
-                    .name James Dean
-                    .position Heating, Electricity
-                    .description James is a real professional, whom you want to trust. His job performance is excellent. His work is heating and electricity.
+                    .name(contenteditable='true') James Dean
+                    .position(contenteditable='true') Heating, Electricity
+                    .description(contenteditable='true') James is a real professional, whom you want to trust. His job performance is excellent. His work is heating and electricity.

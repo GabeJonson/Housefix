@@ -7,8 +7,8 @@ block content
     section.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
         .container
             .row
-                p.big-text Building Your Quality
-                p.big-text of Comfortable Life
+                p.big-text(contenteditable='true') Building Your Quality
+                p.big-text(contenteditable='true') of Comfortable Life
 
     section.services.container-fluid
         .container
@@ -22,17 +22,17 @@ block content
                         a(href='#').top-box.relative
                             +figure(`services.jpg`)
                             .text-container.text-center
-                                p Electrician
-                                    span Services
+                                p(contenteditable='true') Electrician
+                                    span(contenteditable='true') Services
                         .description-container.text-center
-                            p.description Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            p.description(contenteditable='true') Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 
     section.send-form.container-fluid(style=`background-image: url(${imgPath}form-bg.jpg)`)
         .container
             .row.end-sm
                 form.col-xs-12.col-sm-6
-                    h3.text-center Get A Quick Quote
-                    p.text-center Send us an email by entering your details and any comments you may have in the form.
+                    h3.text-center(contenteditable='true') Get A Quick Quote
+                    p.text-center(contenteditable='true') Send us an email by entering your details and any comments you may have in the form.
                     input(type='text', placeholder='Your Name')
                     input(type='text', placeholder='Your E-mail*')
                     textarea(placeholder='Message')
@@ -46,9 +46,9 @@ block content
         .row
             -for(var i = 0; i < 3; i++)
                 .customer-container.col-xs-12.col-md-4
-                    p.description.relative I highly recommend this company. I had a washer break down and they had it back up and running within 30 minutes of service call. The service men were very professional and prompt. If you have appliance damages, give them a call, they will surely repair.
+                    p.description.relative(contenteditable='true') I highly recommend this company. I had a washer break down and they had it back up and running within 30 minutes of service call. The service men were very professional and prompt. If you have appliance damages, give them a call, they will surely repair.
                     .name-container.row
                         +figure('sandra.jpg')(class='col-xs-3')
                         .text-container
-                            p.name Sandra Mitchell
-                            span Housewife
+                            p.name(contenteditable='true') Sandra Mitchell
+                            span(contenteditable='true') Housewife

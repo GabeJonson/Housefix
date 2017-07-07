@@ -7,8 +7,8 @@ block content
     section.single.services-page.big-box.container-fluid.parallax(style=`background-image: url(${imgPath}big-bg.jpg)`)
         .container
             .row
-                p.big-text.col-xs-12 Contact
-                p.big-text.col-xs-12 Information
+                p.big-text.col-xs-12(contenteditable='true') Contact
+                p.big-text.col-xs-12(contenteditable='true') Information
 
     section.contact.container
         .row
@@ -16,29 +16,29 @@ block content
                 .marker
                     i.fa.fa-map-marker
                     .line
-                    .type Location:
-                    p.small-text 176 W street name,
-                    p.small-text New York, NY 10014
+                    .type(contenteditable='true') Location:
+                    p.small-text(contenteditable='true') 176 W street name,
+                    p.small-text(contenteditable='true') New York, NY 10014
             .col-xs-12.col-sm-4.text-center
                 .mail
                     i.fa.fa-envelope-open-o
                     .line
-                    .type Email:
-                    p.small-text info@yoursite.com
-                    p.small-text www.yoursite.com
+                    .type(contenteditable='true') Email:
+                    p.small-text(contenteditable='true') info@yoursite.com
+                    p.small-text(contenteditable='true') www.yoursite.com
             .col-xs-12.col-sm-4.text-center
                 .phone
                     i.fa.fa-mobile
                     .line
-                    .type Location:
-                    p.small-text +1(800)123-4567
-                    p.small-text +1(800)123-4567
+                    .type(contenteditable='true') Location:
+                    p.small-text(contenteditable='true') +1(800)123-4567
+                    p.small-text(contenteditable='true') +1(800)123-4567
     section#map
 
     section.form
         form.col-xs-12.col-sm-3
-            h3.text-center Get A Quick Quote
-            p.text-center Send us an email by entering your details and any comments you may have in the form.
+            h3.text-center(contenteditable='true') Get A Quick Quote
+            p.text-center(contenteditable='true') Send us an email by entering your details and any comments you may have in the form.
             input(type='text', placeholder='Your Name')
             input(type='text', placeholder='Your E-mail*')
             textarea(placeholder='Message')

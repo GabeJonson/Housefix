@@ -13,8 +13,8 @@ mixin list-link(href, text, linkClass)
 			a(href=href)= text
 
 mixin heading(headingText, smallText)
-	h2.h2.heading-text.col-xs-12&attributes(attributes)= headingText
-	p.small-text.col-xs-12&attributes(attributes)= smallText
+	h2.h2.heading-text.col-xs-12(contenteditable='true')&attributes(attributes)= headingText
+	p.small-text.col-xs-12(contenteditable='true')&attributes(attributes)= smallText
 	if block
 		block
 
@@ -22,10 +22,10 @@ mixin features(text, desc)
 	.features-container.row.col-xs-12.col-md-4
 		+figure(`features-${i}.jpg`)(class='col-xs-2')
 		.text.col-xs-10
-			h3.h3= text
-			p.small-text= desc
+			h3.h3(contenteditable='true')= text
+			p.small-text(contenteditable='true')= desc
 
 mixin counter(number, text)
 	.col-xs-12.col-sm-3
-		p.number.relative= number
-		p.text= text
+		p.number.relative(contenteditable='true')= number
+		p.text(contenteditable='true')= text
